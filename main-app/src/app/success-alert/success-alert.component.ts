@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './success-alert.component.css'
 })
 export class SuccessAlertComponent {
-
+  serverStatus: string = 'Online';
+  serverId: number = 10;
 }
