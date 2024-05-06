@@ -6,13 +6,14 @@ import {Component, OnInit} from '@angular/core';
   styleUrl: './success-alert.component.css'
 })
 export class SuccessAlertComponent implements OnInit {
-  serverStatus: string = 'Online';
+  serverStatus: string = 'Offline';
   serverId: number = 10;
   isNewServer: boolean = false;
 
   constructor() {
     setTimeout(() => {
         this.isNewServer = true;
+        this.serverStatus = 'Online';
       }, 2000
     )
   }
