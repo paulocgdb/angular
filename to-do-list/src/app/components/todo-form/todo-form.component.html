@@ -1,1 +1,13 @@
 <p>todo-form works!</p>
+
+<h1>{{dayMessage}}</h1>
+
+<input [(ngModel)]="interviewMessage">
+
+<p>{{interviewMessage}}</p>
+
+<form [formGroup]="form">
+  <input type="text" formControlName = "name">
+  <input type="number" formControlName = "age">
+  <button (click)="sendForm()">Enviar</button>
+</form>
