@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {TodoServiceService} from "../../services/todo-service.service";
-import {FormBuilder, FormGroup} from "@angular/forms";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-todo-form',
@@ -18,8 +18,8 @@ export class TodoFormComponent implements OnInit {
   ) {
 
     this.form = this.fb.group({
-      name: null,
-      age: null
+      name: [null, [Validators.minLength(2)]],
+      age: [null, [Validators.max(100)]]
     });
 
   }
