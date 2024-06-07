@@ -19,7 +19,8 @@ export class TodoFormComponent implements OnInit {
 
     this.form = this.fb.group({
       name: [null, [Validators.minLength(2)]],
-      age: [null, [Validators.max(100)]]
+      age: [null, [Validators.max(100)]],
+      money: [null, [Validators.max(100)]]
     });
 
   }
