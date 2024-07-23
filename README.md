@@ -1,1 +1,1 @@
-# angular
+# angular exercises
