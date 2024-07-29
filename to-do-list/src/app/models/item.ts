@@ -1,6 +1,6 @@
 export class Item {
   nome: string = '';
-  feito: boolean = true;
+  feito: boolean = false;
 
   Item (nome: string, feito: boolean) {
     this.nome = nome;
