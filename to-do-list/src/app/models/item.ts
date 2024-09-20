@@ -1,10 +1,11 @@
 export class Item {
   nome: string = '';
   feito: boolean = false;
-  statys: string = '';
+  status: string = '';
 
-  Item (nome: string, feito: boolean) {
+  Item (nome: string, feito: boolean, status: string) {
     this.nome = nome;
     this.feito = feito;
+    this.status = status;
   }
 }
