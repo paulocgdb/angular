@@ -11,6 +11,7 @@ export class TodoFormComponent implements OnInit {
 
   dayMessage: string = '';
   interviewMessage: string = '';
+  
   form!: FormGroup;
 
   constructor(private service: TodoServiceService,
